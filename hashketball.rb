@@ -1,6 +1,14 @@
 # Write your code here!
+def points_for(player_name)
+  game_hash[:home_team][:players].each do |player|
+    if player[:name] == player_name
+      return player[:points]
+    end
+  end
+end
 
 def game_hash
+<<<<<<< HEAD
    {
   :home => {
     :team_name => "Brooklyn Nets",
@@ -8,6 +16,15 @@ def game_hash
     :players => [
       {
       :player_name => "Alan Anderson",
+=======
+  {
+  :home_team => {
+    :name => "Brooklyn Nets",
+    :colors => ["Black", "White"],
+    :players => [
+      {
+        :name => "Alan Anderson",
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
       :number => 0,
       :shoe => 16,
       :points => 22,
@@ -18,7 +35,11 @@ def game_hash
       :slam_dunks => 1
       },
       {
+<<<<<<< HEAD
       :player_name => "Reggie Evans",
+=======
+      :name => "Reggie Evans",
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
       :number => 30,
       :shoe => 14,
       :points => 12,
@@ -29,7 +50,11 @@ def game_hash
       :slam_dunks => 7
       },
       {
+<<<<<<< HEAD
       :player_name => "Brook Lopez",
+=======
+      :name => "Brook Lopez",
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
       :number => 11,
       :shoe => 17,
       :points => 17,
@@ -40,18 +65,30 @@ def game_hash
       :slam_dunks => 15
       },
       {
+<<<<<<< HEAD
       :player_name => "Mason Plumlee",
       :number => 1,
       :shoe => 19,
       :points => 26,
       :rebounds => 11,
+=======
+      :name => "Mason Plumlee",
+      :number => 1,
+      :shoe => 19,
+      :points => 26,
+      :rebounds => 12,
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
       :assists => 6,
       :steals => 3,
       :blocks => 8,
       :slam_dunks => 5
       },
       {
+<<<<<<< HEAD
       :player_name => "Jason Terry",
+=======
+      :name => "Jason Terry",
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
       :number => 31,
       :shoe => 15,
       :points => 19,
@@ -62,6 +99,7 @@ def game_hash
       :slam_dunks => 1
       }
     ]
+<<<<<<< HEAD
   },
   :away => {
     :team_name => "Charlotte Hornets",
@@ -126,3 +164,7 @@ def game_hash
   }
 }
 end        
+=======
+  }
+end        
+>>>>>>> 60fb7be6819e91d7ba2152298d3ceddff3a523fc
